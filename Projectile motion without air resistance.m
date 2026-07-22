@@ -97,9 +97,7 @@ total_time = 2*time_to_max_height;
 % Finding Maximum Height
 % -------------------------------------------------------------
 
-maximum_height = initial_vertical_position ...
-    + (initial_vertical_velocity*time_to_max_height) ...
-    - (0.5*gravity*time_to_max_height^2);
+maximum_height = initial_vertical_position + (initial_vertical_velocity*time_to_max_height) - (0.5*gravity*time_to_max_height^2);
 
 % This uses:
 %
@@ -126,11 +124,11 @@ range = initial_horizontal_velocity*total_time;
 % Display Results
 % -------------------------------------------------------------
 
-fprintf("Maximum Height: %.2f meters\n", maximum_height)
+disp('Maximum height is', maximum_height)
 
-fprintf("Time of Flight: %.2f seconds\n", total_time)
+disp('Time of flight is', total_time)
 
-fprintf("Range: %.2f meters\n", range)
+disp("The total distance the projectile flew was", range)
 
 
 
@@ -143,9 +141,7 @@ time = linspace(0,total_time,100);
 % Creates 100 time points between launch and landing.
 
 
-height = initial_vertical_position ...
-    + (initial_vertical_velocity*time) ...
-    - (0.5*gravity*time.^2);
+height = initial_vertical_position + (initial_vertical_velocity*time) - (0.5*gravity*time.^2);
 
 % Calculates the height of the projectile at each time.
 
@@ -161,3 +157,4 @@ xlabel('Time (seconds)')
 ylabel('Height (meters)')
 
 title('Projectile Motion: Height vs Time')
+
