@@ -156,3 +156,4 @@ legend('Euler (drifts)', 'RK4 (stays flat)', 'Location', 'best', 'FontSize', 7);
 
 % Overall title 
 sgtitle('Computational Physics: Solving the Unsolvable', 'FontSize', 18, 'FontWeight', 'bold');
+
