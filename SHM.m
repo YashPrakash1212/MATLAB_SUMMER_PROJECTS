@@ -272,4 +272,5 @@ function [theta1, omega1, theta2, omega2, t, x2, y2] = simulate_double_pendulum(
     x2 = x1 + L2*sin(theta2);
     y2 = y1 - L2*cos(theta2);
 end
+
  
